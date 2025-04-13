@@ -1,0 +1,92 @@
+body {
+    background-color: #210F37;
+    font-family: 'Segoe UI', sans-serif;
+    color: #DCA06D;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  h1 {
+    color: #A55B4B;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .cell {
+    background: linear-gradient(145deg, #4F1C51, #3a1340);
+    border: 2px solid #A55B4B;
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    color: #DCA06D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(220, 160, 109, 0.2);
+    border-radius: 12px;
+  }
+  
+  .cell:hover {
+    transform: scale(1.05);
+    background-color: #5c2a5e;
+  }
+  
+  .cell.X {
+    color: #A55B4B;
+    font-weight: bold;
+  }
+  
+  .cell.O {
+    color: #DCA06D;
+    font-weight: bold;
+  }
+  
+  #status {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #DCA06D;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #A55B4B;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(165, 91, 75, 0.4);
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #DCA06D;
+    color: #210F37;
+  }
+  
+  #win-line {
+    position: absolute;
+    height: 6px;
+    background-color: #DCA06D;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    transform-origin: left center;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
